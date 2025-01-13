@@ -1,0 +1,22 @@
+# Unity generated files
+Temp/
+Obj/
+.vs/
+.idea/
+.vscode/
+Library/
+Build/
+Builds/
+
+# User-specific files
+UserSettings/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Unity crash reports
+sysinfo.txt
