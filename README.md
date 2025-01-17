@@ -7,7 +7,7 @@ For a brief summary of this project, and an overview of its main features and te
 https://docs.google.com/document/d/194jNqGxu10QBy9103unHioqqRk2P0hvCppiuIRiBDfk/edit?usp=sharing 
 
 ## Current Status
-Currently, the project is in Milestone 2, where the basic mechanics are being built. 
+Currently, the project is in Milestone 2, where the basic mechanics are being built. The character should be able to move with keyboard controls (arrow keys) around the world. To-Do: Track camera with camera movement and block character from walking on certain tiles (such as water).
 
 ## Timeline
 **Milestones**
