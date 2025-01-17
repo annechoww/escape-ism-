@@ -15,8 +15,24 @@ Currently, the project is in Milestone 2, where the basic mechanics are being bu
 2. Add placeholder assets and basic mechanics (January).
 3. Test and iterate on gameplay (February-March).
 
-## Setup & Running the Game
+## Prerequisites
+Before running this project, you will need:
+- Unity version: This project was developed using Unity 6000.0.32f1. You can download it from the [Unity Hub](https://unity3d.com/get-unity/download).
+- Version Control: Git
 
+## Setup & Running the Game
+### Cloning the Repository
+To get started with this project, first clone it to your local machine:
+
+```bash
+git clone https://github.com/annechoww/escape-ism-.git
+```
+### Setup Project
+1. Open Unity Hub and click on **Add** to open the project directory you just cloned.
+2. Once the project is open in Unity, Unity will likely start downloading any required packages if you’re using Package Manager.
+
+### Running the Game
+Once the project is set up, click on the **Play** button at the top of the Unity editor to run the project.
 
 ## Revisions Made
 - Narrowed down Scope
