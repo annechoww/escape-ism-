@@ -12140,6 +12140,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!4 &604453049 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 402449972710533101, guid: 87146c5a051b64cfebe5adcf6923338b, type: 3}
+  m_PrefabInstance: {fileID: 1121143080}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &939172534
 GameObject:
   m_ObjectHideFlags: 0
@@ -26170,6 +26175,7 @@ GameObject:
   - component: {fileID: 1958772466}
   - component: {fileID: 1958772465}
   - component: {fileID: 1958772468}
+  - component: {fileID: 1958772469}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -26295,6 +26301,19 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &1958772469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958772464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a2177c95f604da2937974892165fce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 604453049}
 --- !u!1 &2084171614
 GameObject:
   m_ObjectHideFlags: 0
