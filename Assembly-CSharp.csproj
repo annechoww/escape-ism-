@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets/PlayerMovement.cs" />
     <Compile Include="Assets/Scripts/PlayerMovement.cs" />
+    <Compile Include="Assets/CameraFollow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/Background/Sprout Lands - Sprites - Basic pack/read_me.txt" />
