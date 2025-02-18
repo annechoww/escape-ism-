@@ -1,12 +1,11 @@
 using UnityEngine;
-using UnityEngine.UI;  // Required to use UI components
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public int coinCount = 1;  // The player's current coin count
-    public Text coinCounterText;  // UI Text element to display coin count
+    public int coinCount = 1;
+    public Text coinCounterText;
 
-    // Method to update the coin count (called by the Coin script)
     public void UpdateCoinCount()
     {
         coinCount = coinCount - 1;
