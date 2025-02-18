@@ -1,36 +1,36 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 using System.Collections;
 using System.Collections.Generic;
 
 public class PlayerMovement2D : MonoBehaviour
 {
-    // Globals
-    private Rigidbody2D playerRb;
-    public float playerSpeed = 5f;
-    private float moveX, moveY;
+    [SerializeField] private int playerSpeed = 5;
+
+    private Vector2 movement;
+    private Rigidbody2D rb;
     private Animator animator;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        playerRb = GetComponent<Rigidbody2D>();
+    private void Awake() {
+        rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        moveX = Input.GetAxis("Horizontal");
-        moveY = Input.GetAxis("Vertical");
+    private void OnMovement(InputValue value) {
+        movement = value.Get<Vector2>();
 
-        // Update Animator parameters
-        animator.SetFloat("Horizontal", moveX);
-        animator.SetFloat("Vertical", moveY);
-        animator.SetBool("IsMoving", Mathf.Abs(moveX) > 0 || Mathf.Abs(moveY) > 0);
+        if (movement.x != 0 || movement.y != 0)
+        {
+            animator.SetFloat("X", movement.x);
+            animator.SetFloat("Y", movement.y);
+            animator.SetBool("isMoving", true);
+        } else
+        {
+            animator.SetBool("isMoving", false);
+        }
     }
 
-    void FixedUpdate()
-    {
-        playerRb.linearVelocity = new Vector2(moveX, moveY) * playerSpeed;
+    private void FixedUpdate() {
+        rb.MovePosition(rb.position + movement * playerSpeed * Time.fixedDeltaTime);
     }
 }
