@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
     public int totalCoins = 22;
     public Text coinCounterText;
     public GameObject levelCompletePanel;
+    public Button continueButton;
 
     public void UpdateCoinCount()
     {
@@ -34,6 +35,7 @@ public class Player : MonoBehaviour
         if (levelCompletePanel != null)
         {
             levelCompletePanel.SetActive(true);
+            continueButton.interactable = true;
         }
     }
 }
