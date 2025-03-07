@@ -37,7 +37,7 @@ public class Timer : MonoBehaviour
         }
     }
 
-    public static void EndGame()
+    public void EndGame()
     {
         if (endGamePanel != null)
         {
