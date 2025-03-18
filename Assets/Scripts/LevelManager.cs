@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
         // Get the current scene's build index and load the next scene
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         int nextSceneIndex = currentSceneIndex + 1;
+        Debug.Log("running");
         
         if (nextSceneIndex < SceneManager.sceneCountInBuildSettings)
         {
@@ -17,5 +18,9 @@ public class LevelManager : MonoBehaviour
         {
             Debug.Log("No more levels to load.");
         }
+    }
+    public void print()
+    {
+        Debug.Log("tEST buTTON");
     }
 }
