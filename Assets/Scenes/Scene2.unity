@@ -14274,68 +14274,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2371562185374991831, guid: 979e61efbd5df4301891a1a8ddad9410, type: 3}
   m_PrefabInstance: {fileID: 391477519}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &399110960
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 399110962}
-  - component: {fileID: 399110961}
-  - component: {fileID: 399110963}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &399110961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399110960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 559d15081e4024391b83bc19b81fb4f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeLimit: 120
-  timerSlider: {fileID: 1946917457}
-  endGamePanel: {fileID: 0}
---- !u!4 &399110962
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399110960}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 64, y: 382.25, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 641664570}
-  - {fileID: 875878991}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &399110963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 399110960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0926606753134b85af77c92686196ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &402581462
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15184,11 +15122,11 @@ Transform:
   m_GameObject: {fileID: 641664567}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -64, y: -382.25, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 399110962}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &647976723
 GameObject:
@@ -20788,12 +20726,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 875878990}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 64, y: 382.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 399110962}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &875878992
 AudioSource:
@@ -24294,8 +24232,8 @@ MonoBehaviour:
   coinCount: 0
   totalCoins: 100
   coinCounterText: {fileID: 1584971278}
-  levelCompletePanel: {fileID: 0}
-  continueButton: {fileID: 0}
+  levelCompletePanel: {fileID: 996607758}
+  continueButton: {fileID: 1629284664}
 --- !u!114 &1117195880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64470,7 +64408,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 399110963}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
         m_MethodName: LoadNextLevel
         m_Mode: 1
@@ -70965,6 +70903,7 @@ SceneRoots:
   - {fileID: 1121143080}
   - {fileID: 2084171616}
   - {fileID: 955377003}
-  - {fileID: 399110962}
   - {fileID: 2063409842}
   - {fileID: 1108852956}
+  - {fileID: 641664570}
+  - {fileID: 875878991}
