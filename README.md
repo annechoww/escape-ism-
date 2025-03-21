@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/28bb1064-fe63-4c67-b308-c457fb7442ac)
+
 # Bunny's Coin Quest
 In this cozy, time-challenging adventure, players control a bunny who escapes a rainy day by daydreaming themselves into a new world, where they must collect scattered coins before time runs out. If all coins have been collected the portal will take the bunny to unexplored parts of the world where they can continue their exploration.
 
